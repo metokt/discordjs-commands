@@ -425,7 +425,8 @@ export class CommandContext<InGuild extends boolean = boolean> {
     }
 
     public send(options: string | MessagePayload | MessageCreateOptions) {
-        return this.messageObject.channel.send(options);
+        if (this.channel.isSendable && this.channel.isTextBased())
+            return (this.channel as TextChannel).send(options);
     }
 
     public purgeChannel(amount: number) {
