@@ -1,5 +1,5 @@
 # Discord.js Prefix Command Helper
-Why? Actually, I developed this library because I don't like slash commands and prefix commands are not officially supported. Have fun.
+Why? Actually, I developed this library because prefix commands are not officially supported. Have fun.
 
 ## Usage
 First, install discord.js and this package using **npm**.
