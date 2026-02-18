@@ -1,17 +1,21 @@
 {
-  "name": "discordjs-prefixes",
-  "version": "0.3.2",
+  "name": "@metokt/discordjs-commands",
+  "version": "0.4.0",
   "description": "A library designed for Discord.js v14 that allows you to quickly add and manage prefix commands.",
   "main": "./dist/index.js",
   "scripts": {
     "build": "npx tsc"
   },
-  "author": "meto155818",
-  "license": "MIT",
+  "author": "metokt",
+  "license": "GPL-3.0-only",
   "devDependencies": {
-    "typescript": "v5.5.4"
+    "typescript": "^5.9.3",
+    "discord.js": "^14.25.1"
   },
-  "dependencies": {
-    "discord.js": "^14.15.3"
+  "files": [
+    "./dist"
+  ],
+  "publishConfig": {
+    "access": "public"
   }
 }
